@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Midnight">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/Midnight"
+        android:padding="10dp">
+
+        <ImageView
+            android:src="@drawable/logocrepes"
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="190sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:text="@string/registro"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/titulo"
+            android:textColor="@color/Milk_White"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:id="@+id/tvCorreo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/White"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su correo"
+            android:id="@+id/etCorreo"
+            android:background="@drawable/custom_edit_text"
+            android:drawableLeft="@drawable/ic_custom_correo"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/Black"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contraseña"
+            android:id="@+id/tvContraseña"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passmin"
+            android:id="@+id/etContraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/Black"
+            android:background="@drawable/custom_edit_text"
+            android:drawableLeft="@drawable/ic_custom_clave"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comcontraseña"
+            android:id="@+id/tvConfcontraseña"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/White"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/samepass"
+            android:id="@+id/etConfcontraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/Black"
+            android:background="@drawable/custom_edit_text"
+            android:drawableLeft="@drawable/ic_custom_clave"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="50dp"
+            android:text="Registrar"
+            android:id="@+id/bnRegistrar"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="@color/Milk_White"
+            android:layout_marginTop="35dp"
+            />
+    </LinearLayout>
+</ScrollView>

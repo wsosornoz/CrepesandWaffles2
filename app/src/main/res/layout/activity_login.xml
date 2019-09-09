@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Midnight">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/Midnight"
+        android:padding="10dp">
+
+        <ImageView
+            android:src="@drawable/logocrepes"
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="190sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text = "@string/correo"
+            android:id = "@+id/txUsuario"
+            android:textSize="25dp"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  @string/loaduser"
+            android:id="@+id/etUsuario"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/Black"
+            android:background="@drawable/custom_edit_text"
+            android:drawableLeft="@drawable/ic_custom_usuario"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            />
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text = "@string/contraseña"
+            android:id = "@+id/txContraseña"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/White"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese contraseña "
+            android:id="@+id/etConstraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/Black"
+            android:background="@drawable/custom_edit_text"
+            android:drawableLeft="@drawable/ic_custom_clave"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:text="Iniciar"
+            android:id="@+id/bnIniciar"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:background="@color/Milk_White"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            />
+
+        <TextView
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text = "@string/aviso_crear"
+            android:id = "@+id/txCreacuenta"
+            android:gravity = "center"
+            android:textSize="20dp"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:id="@+id/bnRegistro"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:background="@color/Milk_White"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
